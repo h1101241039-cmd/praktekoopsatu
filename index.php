@@ -1,30 +1,34 @@
 <?php
-// index.php
-$nama = "Peserta Praktik";
-$waktu = date("Y-m-d H:i:s");
-?>
+session_start();
 
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    // Contoh validasi login sederhana (tanpa database)
+    if ($username == "admin" && $password == "12345") {
+        $_SESSION['username'] = $username;
+        header("Location: home.php");
+        exit();
+    } else {
+        $error = "Username atau password salah!";
+    }
+}
+?>
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Website PHP di Hugging Face</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
-        .container { max-width: 600px; margin: 0 auto; }
-        .box { background: #f0f8ff; padding: 20px; border-radius: 10px; margin-top: 20px; }
-    </style>
+    <title>Login</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Selamat Datang di dunia flo wenny
-        </h1>
-        <p>Halo <strong><?= htmlspecialchars($nama) ?></strong></p>
-        <div class="box">
-            <p>Waktu server: <code><?= $waktu ?></code></p>
-            <p>Dijalankan di <strong>Docker</strong> di Hugging Face Spaces ✅</p>
-        </div>
-    </div>
+    <h2>Halaman Login</h2>
+    <?php if (!empty($error)) echo "<p style='color:red;'>$error</p>"; ?>
+    <form method="post" action="index.php">
+        <label>Username:</label><br>
+        <input type="text" name="username" required><br><br>
+        <label>Password:</label><br>
+        <input type="password" name="password" required><br><br>
+        <button type="submit">Login</button>
+    </form>
 </body>
 </html>
-
