@@ -1,22 +1,11 @@
-<?php
-session_start();
-
-// Cek apakah sudah login
-if (!isset($_SESSION['username'])) {
-    header("Location: index.php");
-    exit();
-}
-
-$username = $_SESSION['username'];
-?>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
+    <title>Halaman Home</title>
 </head>
 <body>
-    <h2>Selamat datang, <?php echo htmlspecialchars($username); ?>!</h2>
-    <p>Anda berhasil login.</p>
-    <a href="logout.php">Logout</a>
+    <h1>Ini Halaman Home</h1>
+    <p>Anda sekarang berada di <b>home.php</b>.</p>
+    <a href="index.php">Kembali ke Index</a>
 </body>
 </html>
