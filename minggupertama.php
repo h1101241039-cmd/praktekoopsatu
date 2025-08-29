@@ -22,3 +22,10 @@ echo $mhs1->tampilData();
 echo "<br>";
 echo $mhs2->tampilData();
 
+
+
+
+
+
+
+
