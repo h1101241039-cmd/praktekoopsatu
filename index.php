@@ -1,15 +1,7 @@
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Halaman Index</title>
+    <title>Halaman Belajar Wenny</title>
     <style>
         body {
             font-family: Arial, sans-serif;
