@@ -20,6 +20,39 @@ class persegiPanjang {
 
 
 
+<?php
+// cara menggunakan class
+// Buat class Produk dengan property nama, harga, stok. Buat method:
+// tampilkanInfo()
+// beliProduk($jumlah) → stok berkurang sesuai jumlah
+
+class Produk {
+    public $nama;
+    public $harga;
+    public $stok;
+
+    public function __construct($nama, $harga, $stok) {
+        $this->nama = $nama;
+        $this->harga = $harga;
+        $this->stok = $stok;
+    }
+
+    public function tampilkanInfo() {
+        return "Produk: $this->nama, Harga: Rp$this->harga, Stok: $this->stok";
+    }
+
+    public function beliProduk($jumlah) {
+        if ($jumlah > $this->stok) {
+            return "Stok tidak cukup!";
+        } else {
+            $this->stok -= $jumlah;
+            return "Berhasil membeli $jumlah $this->nama. Sisa stok: $this->stok";
+        }
+    }
+}
+
+
+
 
 
 

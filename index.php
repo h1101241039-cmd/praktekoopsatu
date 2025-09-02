@@ -35,7 +35,7 @@
 <body>
     <div class="card">
         <h1>🌟 Selamat Datang di Index</h1>
-        <p>Ini adalah halaman pertama (index.php).</p>
+        <p>Di halama home bakal ada update praktikum setiap minggnya !!!</p>
         <a href="home.php"> ➡ Pergi ke Halaman Home</a>
     </div>
 </body>
