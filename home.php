@@ -36,7 +36,7 @@
     <div class="card">
         <h1>🏡 Selamat Datang di Home</h1>
         <p>Ini adalah halaman kedua (home.php).</p>
-        <a href="index.php">⬅ Kembali ke Halaman Index</a>
+        <a href="index.php">⬅ Kembali ke Halaman profil</a>
     </div>
 </body>
 </html>
