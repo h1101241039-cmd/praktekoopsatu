@@ -37,6 +37,10 @@
         <h1>🏡 Selamat Datang di Home</h1>
         <p>Ini adalah halaman kedua (home.php).</p>
         <a href="index.php">⬅ Kembali ke Halaman profil</a>
+        <a href="latihan1.php">halan praktikum 1</a>
+        <a href="index.php">⬅ Kembali ke Halaman profil</a>
+        <a href="index.php">⬅ Kembali ke Halaman profil</a>
+        
     </div>
 </body>
 </html>
