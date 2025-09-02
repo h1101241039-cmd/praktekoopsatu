@@ -36,10 +36,11 @@
     <div class="card">
         <h1>🏡 Selamat Datang di Home</h1>
         <p>Ini adalah halaman kedua (home.php).</p>
-        <a href="index.php">⬅ Kembali ke Halaman profil</a>
-        <a href="latihan1.php">halan praktikum 1</a>
-        <a href="index.php">⬅ Kembali ke Halaman profil</a>
-        <a href="index.php">⬅ Kembali ke Halaman profil</a>
+        <a href="index.php">⬅ Kembali ke Halaman profil</a><br>
+        <a href="latihan1.php">halan praktikum 1</a><br>
+        <a href="latihan2.php">halan praktikum 2</a><br>
+        <a href="latihan3.php">halan praktikum 3</a><br>
+        <a href="latihan4.php">halan praktikum 4</a><br>
         
     </div>
 </body>
