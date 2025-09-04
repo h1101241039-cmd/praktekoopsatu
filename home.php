@@ -5,7 +5,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #ff9966, #ff5e62);
+            background: linear-gradient(to right, #9c6d9cff, #a95097ff);
             text-align: center;
             padding: 100px;
             color: white;
@@ -21,7 +21,7 @@
             display: inline-block;
             margin-top: 20px;
             padding: 12px 25px;
-            background: #4caf50;
+            background: #659cb9ff;
             color: white;
             text-decoration: none;
             border-radius: 8px;
@@ -37,10 +37,10 @@
         <h1>🏡 Selamat Datang di Home</h1>
         <p>Ini adalah halaman kedua (home.php).</p>
         <a href="index.php">⬅ Kembali ke Halaman profil</a><br>
-        <a href="latihan1.php">halan praktikum 1</a><br>
-        <a href="latihan2.php">halan praktikum 2</a><br>
-        <a href="latihan3.php">halan praktikum 3</a><br>
-        <a href="latihan4.php">halan praktikum 4</a><br>
+        <a href="latihan1.php">Halaman praktikum 1</a><br>
+        <a href="latihan2.php">Halaman praktikum 2</a><br>
+        <a href="latihan3.php">Halaman praktikum 3</a><br>
+        <a href="latihan4.php">Halaman praktikum 4</a><br>
         
     </div>
 </body>

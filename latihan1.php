@@ -107,7 +107,7 @@ class persegiPanjang {
         <a href="home.php">⬅ Kembali ke Home</a>
     </div>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br>
 
     <div class="card">
         <h1>📏 Hitung Persegi Panjang</h1>
