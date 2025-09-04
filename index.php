@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Halaman Belajar Wenny</title>
+    <title>Halaman Belajar ku</title>
     <style>
         body {
             font-family: Arial, sans-serif;
