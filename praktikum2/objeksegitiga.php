@@ -68,7 +68,7 @@
         </form>
         <div class="result">
             <?php
-            include 'classsegitiga.php';
+            require_once "latihan2.1.php";
 
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $sisi1 = $_POST['sisi1'];
