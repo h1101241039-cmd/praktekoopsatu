@@ -25,7 +25,7 @@ class persegiPanjang {
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #ff9966, #ff5e62);
+            background: #267f53;
             text-align: center;
             padding: 100px;
             color: white;

@@ -25,7 +25,7 @@ class User {
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #ff512f, #dd2476);
+            background:  #99b7f5;
             text-align: center;
             padding: 100px;
             color: white;

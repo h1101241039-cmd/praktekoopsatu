@@ -37,7 +37,7 @@ class Produk {
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #8360c3, #2ebf91);
+            background: #8360c3;
             text-align: center;
             padding: 100px;
             color: white;
