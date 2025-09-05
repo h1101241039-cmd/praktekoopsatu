@@ -1,4 +1,4 @@
-<?php require_once "objeksegitiga.php"; ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -70,6 +70,7 @@
 
         <div class="result">
         <?php
+        require_once "objeksegitiga.php"; 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $sisi1 = $_POST['sisi1'];
             $sisi2 = $_POST['sisi2'];
