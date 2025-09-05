@@ -41,6 +41,7 @@
         <a href="latihan1.2.php">Latihan 2 > class Produk dengan property nama, harga, stok </a>
         <a href="latihan1.3.php">Latihan 3 > Mini project aplikasi sederhana  </a>
         <a href="tugasmandiriprak1.php">Tugas mandiri > Mini project aplikasi sederhana  </a>
+        <a href="../home.php">⬅ Kembali ke Home</a>
 
     </div>
 </body>
