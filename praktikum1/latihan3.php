@@ -104,7 +104,7 @@ class persegiPanjang {
         }
         ?>
         <a href="beranda1.php">⬅ Kembali ke halaman praktikum 1</a>
-        <a href="home.php">⬅ Kembali ke Home</a>
+        <a href="../home.php">⬅ Kembali ke Home</a>
     </div>
 
 </body>
