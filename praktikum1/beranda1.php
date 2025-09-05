@@ -5,7 +5,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background:  #f296db;
+            background:  #2c3e50;
             text-align: center;
             padding: 100px;
             color: white;
@@ -40,6 +40,7 @@
         <a href="latihan1.php">Latihan 1 > luas dan keliling persegi panjang </a>
         <a href="latihan2.php">Latihan 2 > class Produk dengan property nama, harga, stok </a>
         <a href="latihan3.php">Latihan 3 > Mini project aplikasi sederhana  </a>
+        <a href="tugasmandiriprak1.php">Tugas mandiri > Mini project aplikasi sederhana  </a>
 
     </div>
 </body>
