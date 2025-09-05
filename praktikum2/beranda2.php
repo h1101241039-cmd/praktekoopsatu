@@ -37,11 +37,9 @@
     <div class="card">
         <h1>Ini halaman praktikum 1</h1>
         <h2>Mau kemana</h2>
-        <a href="latihan1.1.php">Latihan 1 > luas dan keliling persegi panjang </a>
-        <a href="latihan1.2.php">Latihan 2 > class Produk dengan property nama, harga, stok </a>
-        <a href="latihan1.3.php">Latihan 3 > Mini project aplikasi sederhana  </a>
-        <a href="tugasmandiriprak1.php">Tugas mandiri > Mini project aplikasi sederhana  </a>
-
+        <a href="latihan2.1.php">class diagram 1 > Segitiga </a>
+        <a href="latihan2.2.php">class diagram 2 > Mobil </a>
+     
     </div>
 </body>
 </html>
