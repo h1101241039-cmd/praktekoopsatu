@@ -64,7 +64,19 @@
             <input type="number" name="sisi1" placeholder="sisi 1" required><br>
             <input type="number" name="sisi2" placeholder="sisi 2" required><br>
             <input type="number" name="sisi3" placeholder="sisi 3" required><br>
-            <input type="submit" value="Beli Produk">
+            <input type="submit" value="Anamalisa">
         </form>
+        <div class="result">
+            <?php
+            include 'classsegitiga.php';
+
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                $sisi1 = $_POST['sisi1'];
+                $sisi2 = $_POST['sisi2'];
+                $sisi3 = $_POST['sisi3'];
+
+                $segitiga->tampilkanInfo();
+            }
+            ?>
 </body>
 </html>
