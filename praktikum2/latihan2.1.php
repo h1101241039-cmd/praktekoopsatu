@@ -33,13 +33,13 @@ class Segitiga {
     }
 
     public function tampilkanInfo() {
-        echo "===== INFORMASI SEGITIGA ======<br>";
-        echo "Alas : " . $this->alas . "<br>";
-        echo "Tinggi : " . $this->tinggi . "<br>";
-        echo "Sisi : {$this->sisi1}, {$this->sisi2}, {$this->sisi3}<br>";
-        echo "Luas : " . $this->hitungLuas() . "<br>";
+        echo "===== INFORMASI SEGITIGA =====<br>";
+        echo "Alas     : " . $this->alas . "<br>";
+        echo "Tinggi   : " . $this->tinggi . "<br>";
+        echo "Sisi     : {$this->sisi1}, {$this->sisi2}, {$this->sisi3}<br>";
+        echo "Luas     : " . $this->hitungLuas() . "<br>";
         echo "Keliling : " . $this->hitungKeliling() . "<br>";
-        echo "Jenis : " . $this->cekJenis() . "<br>";
+        echo "Jenis    : " . $this->cekJenis() . "<br>";
         echo "===============================<br><br>";
     }
 }
