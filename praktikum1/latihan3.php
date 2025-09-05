@@ -1,19 +1,19 @@
 <?php
-class persegiPanjang {
-    public $panjang;
-    public $lebar;
+class User {
+    public $username;
+    public $password;
 
-    public function __construct($p, $l) {
-        $this->panjang = $p;
-        $this->lebar = $l;
+    public function __construct($username, $password) {
+        $this->username = $username;
+        $this->password = $password;
     }
 
-    public function hitungLuas() {
-        return $this->panjang * $this->lebar;
-    }
-
-    public function hitungKeliling() {
-        return 2 * ($this->panjang + $this->lebar);
+    public function login($username, $password) {
+        if ($username === $this->username && $password === $this->password) {
+            return "✅ Login berhasil! Selamat datang, <b>{$this->username}</b>.";
+        } else {
+            return "❌ Login gagal! Username atau password salah.";
+        }
     }
 }
 ?>
@@ -21,11 +21,11 @@ class persegiPanjang {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hitung Persegi Panjang</title>
+    <title>Latihan 3 - Mini Project Login</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #ff9966, #ff5e62);
+            background: linear-gradient(to right, #ff512f, #dd2476);
             text-align: center;
             padding: 100px;
             color: white;
@@ -38,7 +38,7 @@ class persegiPanjang {
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
             width: 400px;
         }
-        input[type="number"] {
+        input {
             padding: 10px;
             width: 80%;
             margin: 10px 0;
@@ -50,8 +50,6 @@ class persegiPanjang {
             padding: 12px 25px;
             background: #4caf50;
             color: white;
-            border: none;
-            border-radius: 8px;
             cursor: pointer;
             transition: 0.3s;
         }
@@ -79,33 +77,31 @@ class persegiPanjang {
 </head>
 <body>
     <div class="card">
-        <h1>📏 Hitung Persegi Panjang</h1>
+        <h1>🔐 Latihan 3 - Login</h1>
 
         <form method="post">
-            <input type="number" name="panjang" placeholder="Masukkan Panjang" required><br>
-            <input type="number" name="lebar" placeholder="Masukkan Lebar" required><br>
-            <input type="submit" value="Hitung">
+            <input type="text" name="username" placeholder="Masukkan Username" required><br>
+            <input type="password" name="password" placeholder="Masukkan Password" required><br>
+            <input type="submit" value="Login">
         </form>
 
         <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $p = $_POST["panjang"];
-            $l = $_POST["lebar"];
+            $inputUser = $_POST["username"];
+            $inputPass = $_POST["password"];
 
-            $pp = new persegiPanjang($p, $l);
+            // Dummy data
+            $dummy = new User("admin", "12345");
 
             echo "<div class='result'>";
-            echo "<h3>Hasil Perhitungan:</h3>";
-            echo "📌 Panjang: $p <br>";
-            echo "📌 Lebar: $l <br>";
-            echo "📐 Luas: " . $pp->hitungLuas() . "<br>";
-            echo "📐 Keliling: " . $pp->hitungKeliling() . "<br>";
+            echo "<h3>Hasil Login:</h3>";
+            echo $dummy->login($inputUser, $inputPass);
             echo "</div>";
         }
         ?>
+
         <a href="beranda1.php">⬅ Kembali ke halaman praktikum 1</a>
         <a href="../home.php">⬅ Kembali ke Home</a>
     </div>
-
 </body>
 </html>

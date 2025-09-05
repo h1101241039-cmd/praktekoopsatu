@@ -1,27 +1,7 @@
-<?php
-class persegiPanjang {
-    public $panjang;
-    public $lebar;
-
-    public function __construct($p, $l) {
-        $this->panjang = $p;
-        $this->lebar = $l;
-    }
-
-    public function hitungLuas() {
-        return $this->panjang * $this->lebar;
-    }
-
-    public function hitungKeliling() {
-        return 2 * ($this->panjang + $this->lebar);
-    }
-}
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hitung Persegi Panjang</title>
+    <title>beranda praktikum 1</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -37,30 +17,6 @@ class persegiPanjang {
             display: inline-block;
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
             width: 400px;
-        }
-        input[type="number"] {
-            padding: 10px;
-            width: 80%;
-            margin: 10px 0;
-            border-radius: 8px;
-            border: none;
-            outline: none;
-        }
-        input[type="submit"] {
-            padding: 12px 25px;
-            background: #4caf50;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        input[type="submit"]:hover {
-            background: #388e3c;
-        }
-        .result {
-            margin-top: 20px;
-            text-align: left;
         }
         a {
             display: inline-block;
@@ -81,9 +37,9 @@ class persegiPanjang {
     <div class="card">
         <h1>Ini halaman praktikum 1</h1>
         <h2>mau kemana</h2>
-        <a href="latihan1.php">Latihan 1 > Menghitung luas dan keliling persegi panjang </a>
-        <a href="latihan2.php">Latihan 2 > Menghitung luas dan keliling persegi panjang </a>
-        <a href="latihan3.php">Latihan 3 > Menghitung luas dan keliling persegi panjang </a>
+        <a href="latihan1.php">Latihan 1 >  luas dan keliling persegi panjang </a>
+        <a href="latihan2.php">Latihan 2 > class Produk dengan property nama, harga, stok </a>
+        <a href="latihan3.php">Latihan 3 > Mini project aplikasi sederhana  </a>
 
     </div>
 </body>

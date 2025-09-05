@@ -1,19 +1,31 @@
 <?php
-class persegiPanjang {
-    public $panjang;
-    public $lebar;
+class Produk {
+    public $nama;
+    public $harga;
+    public $stok;
 
-    public function __construct($p, $l) {
-        $this->panjang = $p;
-        $this->lebar = $l;
+    public function __construct($nama, $harga, $stok) {
+        $this->nama  = $nama;
+        $this->harga = $harga;
+        $this->stok  = $stok;
     }
 
-    public function hitungLuas() {
-        return $this->panjang * $this->lebar;
+    public function tampilkanInfo() {
+        return "📌 Nama: {$this->nama} <br>" .
+               "📌 Harga: Rp " . number_format($this->harga, 0, ',', '.') . "<br>" .
+               "📌 Stok: {$this->stok} <br>";
     }
 
-    public function hitungKeliling() {
-        return 2 * ($this->panjang + $this->lebar);
+    public function beliProduk($jumlah) {
+        if ($jumlah > $this->stok) {
+            return "❌ Stok tidak mencukupi untuk membeli $jumlah unit.<br>";
+        } else {
+            $this->stok -= $jumlah;
+            $total = $this->harga * $jumlah;
+            return "✅ Berhasil membeli $jumlah unit {$this->nama}.<br>" .
+                   "💰 Total Harga: Rp " . number_format($total, 0, ',', '.') . "<br>" .
+                   "📦 Sisa Stok: {$this->stok}<br>";
+        }
     }
 }
 ?>
@@ -21,11 +33,11 @@ class persegiPanjang {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hitung Persegi Panjang</title>
+    <title>Latihan 2 - Produk</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #ff9966, #ff5e62);
+            background: linear-gradient(to right, #8360c3, #2ebf91);
             text-align: center;
             padding: 100px;
             color: white;
@@ -38,7 +50,7 @@ class persegiPanjang {
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
             width: 400px;
         }
-        input[type="number"] {
+        input {
             padding: 10px;
             width: 80%;
             margin: 10px 0;
@@ -50,8 +62,6 @@ class persegiPanjang {
             padding: 12px 25px;
             background: #4caf50;
             color: white;
-            border: none;
-            border-radius: 8px;
             cursor: pointer;
             transition: 0.3s;
         }
@@ -79,33 +89,36 @@ class persegiPanjang {
 </head>
 <body>
     <div class="card">
-        <h1>📏 Hitung Persegi Panjang</h1>
+        <h1>🛒 Latihan 2 - Produk</h1>
 
         <form method="post">
-            <input type="number" name="panjang" placeholder="Masukkan Panjang" required><br>
-            <input type="number" name="lebar" placeholder="Masukkan Lebar" required><br>
-            <input type="submit" value="Hitung">
+            <input type="text" name="nama" placeholder="Nama Produk" required><br>
+            <input type="number" name="harga" placeholder="Harga Produk" required><br>
+            <input type="number" name="stok" placeholder="Stok Produk" required><br>
+            <input type="number" name="jumlah" placeholder="Jumlah Beli" required><br>
+            <input type="submit" value="Beli Produk">
         </form>
 
         <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $p = $_POST["panjang"];
-            $l = $_POST["lebar"];
+            $nama   = $_POST["nama"];
+            $harga  = $_POST["harga"];
+            $stok   = $_POST["stok"];
+            $jumlah = $_POST["jumlah"];
 
-            $pp = new persegiPanjang($p, $l);
+            $produk = new Produk($nama, $harga, $stok);
 
             echo "<div class='result'>";
-            echo "<h3>Hasil Perhitungan:</h3>";
-            echo "📌 Panjang: $p <br>";
-            echo "📌 Lebar: $l <br>";
-            echo "📐 Luas: " . $pp->hitungLuas() . "<br>";
-            echo "📐 Keliling: " . $pp->hitungKeliling() . "<br>";
+            echo "<h3>📋 Informasi Produk:</h3>";
+            echo $produk->tampilkanInfo();
+            echo "<h3>🛍 Proses Pembelian:</h3>";
+            echo $produk->beliProduk($jumlah);
             echo "</div>";
         }
         ?>
+
         <a href="beranda1.php">⬅ Kembali ke halaman praktikum 1</a>
         <a href="../home.php">⬅ Kembali ke Home</a>
     </div>
-
 </body>
 </html>
