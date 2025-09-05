@@ -79,33 +79,12 @@ class persegiPanjang {
 </head>
 <body>
     <div class="card">
-        <h1>📏 Hitung Persegi Panjang</h1>
+        <h1>Ini halaman praktikum 1</h1>
+        <h2>mau kemana</h2>
+        <a href="latihan1.php">Latihan 1 > Menghitung luas dan keliling persegi panjang </a>
+        <a href="latihan2.php">Latihan 2 > Menghitung luas dan keliling persegi panjang </a>
+        <a href="latihan3.php">Latihan 3 > Menghitung luas dan keliling persegi panjang </a>
 
-        <form method="post">
-            <input type="number" name="panjang" placeholder="Masukkan Panjang" required><br>
-            <input type="number" name="lebar" placeholder="Masukkan Lebar" required><br>
-            <input type="submit" value="Hitung">
-        </form>
-
-        <?php
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $p = $_POST["panjang"];
-            $l = $_POST["lebar"];
-
-            $pp = new persegiPanjang($p, $l);
-
-            echo "<div class='result'>";
-            echo "<h3>Hasil Perhitungan:</h3>";
-            echo "📌 Panjang: $p <br>";
-            echo "📌 Lebar: $l <br>";
-            echo "📐 Luas: " . $pp->hitungLuas() . "<br>";
-            echo "📐 Keliling: " . $pp->hitungKeliling() . "<br>";
-            echo "</div>";
-        }
-        ?>
-
-        <a href="home.php">⬅ Kembali ke Home</a>
     </div>
-
 </body>
 </html>
