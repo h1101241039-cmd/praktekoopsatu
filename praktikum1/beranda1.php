@@ -5,7 +5,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #ff9966, #ff5e62);
+            background:  #f5793b;
             text-align: center;
             padding: 100px;
             color: white;
@@ -22,14 +22,14 @@
             display: inline-block;
             margin-top: 20px;
             padding: 12px 25px;
-            background: #2196f3;
+            background: #fcca59;
             color: white;
             text-decoration: none;
             border-radius: 8px;
             transition: 0.3s;
         }
         a:hover {
-            background: #1565c0;
+            background: #e3b750ff;
         }
     </style>
 </head>
