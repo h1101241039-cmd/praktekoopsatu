@@ -37,7 +37,7 @@
     <div class="card">
         <h1>Ini halaman praktikum 1</h1>
         <h2>Mau kemana</h2>
-        <a href="objeksegitiga.php">class diagram 1 > Segitiga </a>
+        <a href="latihan2.1.php">class diagram 1 > Segitiga </a>
         <a href="latihan2.2.php">class diagram 2 > Mobil </a>
         <a href="../home.php">⬅ Kembali ke Home</a>
      
