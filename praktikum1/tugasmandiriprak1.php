@@ -45,4 +45,58 @@ $daftarBuku = $perpus->getDaftarBuku();
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Manajemen
+    <title>Manajemen Perpustakaan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            padding: 30px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 70%;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background: #2c3e50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Daftar Buku di Perpustakaan</h1>
+
+<table>
+    <tr>
+        <th>No</th>
+        <th>Judul</th>
+        <th>Penulis</th>
+        <th>Tahun</th>
+    </tr>
+    <?php foreach ($daftarBuku as $i => $buku): ?>
+        <tr>
+            <td><?= $i + 1 ?></td>
+            <td><?= htmlspecialchars($buku->judul) ?></td>
+            <td><?= htmlspecialchars($buku->penulis) ?></td>
+            <td><?= htmlspecialchars($buku->tahun) ?></td>
+        </tr>
+    <?php endforeach; ?>
+</table>
+
+</body>
+</html>

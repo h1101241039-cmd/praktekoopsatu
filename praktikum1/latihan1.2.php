@@ -11,20 +11,20 @@ class Produk {
     }
 
     public function tampilkanInfo() {
-        return "📌 Nama: {$this->nama} <br>" .
-               "📌 Harga: Rp " . number_format($this->harga, 0, ',', '.') . "<br>" .
-               "📌 Stok: {$this->stok} <br>";
+        return " Nama   : {$this->nama} <br>" .
+               " Harga  : Rp " . number_format($this->harga, 0, ',', '.') . "<br>" .
+               " Stok   : {$this->stok} <br>";
     }
 
     public function beliProduk($jumlah) {
         if ($jumlah > $this->stok) {
-            return "❌ Stok tidak mencukupi untuk membeli $jumlah unit.<br>";
+            return " Stok tidak mencukupi untuk membeli $jumlah unit.<br>";
         } else {
             $this->stok -= $jumlah;
             $total = $this->harga * $jumlah;
-            return "✅ Berhasil membeli $jumlah unit {$this->nama}.<br>" .
-                   "💰 Total Harga: Rp " . number_format($total, 0, ',', '.') . "<br>" .
-                   "📦 Sisa Stok: {$this->stok}<br>";
+            return " Berhasil membeli $jumlah unit {$this->nama}.<br>" .
+                   " Total Harga    : Rp " . number_format($total, 0, ',', '.') . "<br>" .
+                   " Sisa Stok      : {$this->stok}<br>";
         }
     }
 }
@@ -89,7 +89,7 @@ class Produk {
 </head>
 <body>
     <div class="card">
-        <h1>🛒 Latihan 2 - Produk</h1>
+        <h1> Latihan 2 - Produk</h1>
 
         <form method="post">
             <input type="text" name="nama" placeholder="Nama Produk" required><br>
@@ -109,7 +109,7 @@ class Produk {
             $produk = new Produk($nama, $harga, $stok);
 
             echo "<div class='result'>";
-            echo "<h3>📋 Informasi Produk:</h3>";
+            echo "<h3> Informasi Produk:</h3>";
             echo $produk->tampilkanInfo();
             echo "<h3>🛍 Proses Pembelian:</h3>";
             echo $produk->beliProduk($jumlah);

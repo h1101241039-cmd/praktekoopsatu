@@ -79,7 +79,7 @@ class persegiPanjang {
 </head>
 <body>
     <div class="card">
-        <h1>📏 Hitung Persegi Panjang</h1>
+        <h1> Hitung Persegi Panjang</h1>
 
         <form method="post">
             <input type="number" name="panjang" placeholder="Masukkan Panjang" required><br>
@@ -96,10 +96,10 @@ class persegiPanjang {
 
             echo "<div class='result'>";
             echo "<h3>Hasil Perhitungan:</h3>";
-            echo "📌 Panjang: $p <br>";
-            echo "📌 Lebar: $l <br>";
-            echo "📐 Luas: " . $pp->hitungLuas() . "<br>";
-            echo "📐 Keliling: " . $pp->hitungKeliling() . "<br>";
+            echo " Panjang  : $p <br>";
+            echo " Lebar    : $l <br>";
+            echo " Luas     : " . $pp->hitungLuas() . "<br>";
+            echo " Keliling : " . $pp->hitungKeliling() . "<br>";
             echo "</div>";
         }
         ?>
