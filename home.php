@@ -39,8 +39,8 @@
         <a href="index.php"> Kembali ke Halaman profil</a><br>
         <a href="praktikum1/beranda1.php">Halaman praktikum 1</a><br>
         <a href="praktikum2/beranda2.php">Halaman praktikum 2</a><br>
-        <a href="praktikum3/beranda3.php">Halaman praktikum 3</a><br>
-        <a href="praktikum4/beranda4.php">Halaman praktikum 4</a><br>
+        <a href="praktikum5/praktek5.php">Halaman praktikum 5</a><br>
+        <a href="praktikum6/beranda4.php">Halaman praktikum 6</a><br>
         
     </div>
 </body>
